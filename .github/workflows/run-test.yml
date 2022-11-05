@@ -9,3 +9,5 @@ jobs:
           node-version: 16
       - run: npm ci
       - run: npm run test
+        env:
+          MY_ACTION_SECRET: ${{secrets.MY_ACTION_SECRET}}
